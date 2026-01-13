@@ -8,6 +8,7 @@ O sistema calcula o valor total de um pedido a partir de um valor básico, aplic
 ## 🏗️ Estrutura do Projeto
 A solução foi desenhada seguindo o princípio de separação de responsabilidades, dividindo a lógica em diferentes serviços registrados como componentes do Spring (`@Service`):
 
+```
 src/main/java/com/vitormwxn/desafio01/
 
  ├── Desafio01Application.java   # Classe principal e ponto de entrada
@@ -16,7 +17,7 @@ src/main/java/com/vitormwxn/desafio01/
  └── services/                   # Camada de lógica de negócio
       ├── OrderService.java      # Regras de cálculo do pedido
       └── ShippingService.java   # Regras de cálculo de frete
-
+```
 ## 📝 Regras de Negócio (Frete)
 O cálculo do frete é baseado no valor básico do pedido (antes do desconto):
 | Valor Básico do Pedido | Frete |
