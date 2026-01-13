@@ -8,9 +8,13 @@ O sistema calcula o valor total de um pedido a partir de um valor básico, aplic
 ## 🏗️ Estrutura do Projeto
 A solução foi desenhada seguindo o princípio de separação de responsabilidades, dividindo a lógica em diferentes serviços registrados como componentes do Spring (`@Service`):
 
-* **OrderService**: Responsável pelo cálculo do valor líquido (aplicação do desconto) e integração com o serviço de frete.
-* **ShippingService**: Concentra as regras de negócio referentes aos custos de envio.
-* **Order (Entity)**: Representa o modelo de dados do pedido.
+src/main/java/com/vitormwxn/desafio01/
+ ├── Desafio01Application.java   # Classe principal e ponto de entrada
+ ├── entities/                   # Representação do modelo de dados
+ │    └── Order.java             # Objeto de Pedido
+ └── services/                   # Camada de lógica de negócio
+      ├── OrderService.java      # Regras de cálculo do pedido
+      └── ShippingService.java   # Regras de cálculo de frete
 
 ## 📝 Regras de Negócio (Frete)
 O cálculo do frete é baseado no valor básico do pedido (antes do desconto):
