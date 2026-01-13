@@ -9,6 +9,7 @@ O sistema calcula o valor total de um pedido a partir de um valor básico, aplic
 A solução foi desenhada seguindo o princípio de separação de responsabilidades, dividindo a lógica em diferentes serviços registrados como componentes do Spring (`@Service`):
 
 src/main/java/com/vitormwxn/desafio01/
+
  ├── Desafio01Application.java   # Classe principal e ponto de entrada
  ├── entities/                   # Representação do modelo de dados
  │    └── Order.java             # Objeto de Pedido
